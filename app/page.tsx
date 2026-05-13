@@ -147,7 +147,7 @@ export default function Page() {
               el.style.color = BLACK;
             }}
           >
-            Scale It →
+            Start The Campaign →
           </a>
         </div>
       </nav>
@@ -158,7 +158,7 @@ export default function Page() {
         <GlowBlob color={MAGENTA} className="w-72 h-72 top-10 right-10" />
 
         <div className="mb-8">
-          <TapeLabel>ARTIST OPPORTUNITY BRIEF · 2026 · GEFFEN/UMG A&R</TapeLabel>
+          <TapeLabel>DIGITAL ACTIVATION PLAN · 2026 · JUVENILE BABY</TapeLabel>
         </div>
 
         <h1
@@ -177,7 +177,7 @@ export default function Page() {
         </p>
 
         <p className="max-w-2xl text-base md:text-lg text-white/70 leading-relaxed mb-10">
-          Two Geffen singles in market. Zero paid digital activation behind either one. This plan runs a focused 12-week digital campaign — targeted ads, daily content, and a locked online presence — to build real streaming traction on both singles and hand the label a data-backed case for what comes next.
+          Two Geffen singles. A TikTok catalog already generating millions of views with no paid support. Over 1M organic Spotify streams. This plan takes what&apos;s already working and runs targeted digital ads and consistent content behind it — remarketing existing content to build real streaming traction on both singles.
         </p>
 
         <div className="flex flex-wrap gap-4 mb-16">
@@ -391,7 +391,7 @@ export default function Page() {
                 Juvenile Baby has the music and the identity. The TikTok diagnostic makes it clear: the audience responds to him as a <em>personality</em> — firearms culture, automotive lifestyle, and direct commentary outperform music-only posts at every level. The digital strategy leads with that. Personality-first content drives the algorithm, and the singles ride the momentum.
               </p>
               <p>
-                <strong className="text-white">Twelve weeks of focused digital activation</strong> — ads on Meta, TikTok, and YouTube targeted at proven audience categories, 2–3 posts daily rooted in lifestyle and identity, and every platform profile locked and consistent — builds the streaming velocity and audience growth that makes the label&apos;s next investment decision straightforward.
+                <strong className="text-white">Twelve weeks of focused digital activation</strong> — paid ads on Meta, TikTok, and YouTube targeting proven audience categories, remarketing existing high-performing content to warm audiences, and 2–3 posts daily keeping the algorithm fed — compounds the traction that&apos;s already there.
               </p>
             </div>
 
@@ -647,22 +647,22 @@ export default function Page() {
         </h2>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
-          <StatCard icon={Headphones} value="325K+" label="Combined Streams"  sub="Across Talm Bout + Silly Rabbit"  accent={LIME}    />
-          <StatCard icon={Users}      value="10K+"  label="New Followers"     sub="Organic, engaged, Tampa-rooted"   accent={MAGENTA} />
-          <StatCard icon={Sparkles}   value="2M+"   label="Influencer Reach"  sub="Micro→mid-tier, tracked ROI"      accent={YELLOW}  />
-          <StatCard icon={Disc3}      value="15+"   label="DSP Playlist Adds" sub="Editorial + algorithmic"          accent="#fff"    />
-          <StatCard icon={Mic}        value="5+"    label="National Press"    sub="Complex / XXL / FADER tier"       accent={LIME}    />
-          <StatCard icon={Target}     value="2.5K+" label="Email/SMS List"    sub="Direct fan monetization"          accent={MAGENTA} />
+          <StatCard icon={Headphones} value="325K+" label="Combined Streams"   sub="Talm Bout + Silly Rabbit"         accent={LIME}    />
+          <StatCard icon={Users}      value="10K+"  label="New Followers"      sub="Across TikTok, IG, YouTube"       accent={MAGENTA} />
+          <StatCard icon={Zap}        value="2M+"   label="Ad Impressions"     sub="Meta + TikTok + YouTube"          accent={YELLOW}  />
+          <StatCard icon={Disc3}      value="15+"   label="DSP Playlist Adds"  sub="Algorithmic + editorial"          accent="#fff"    />
+          <StatCard icon={Target}     value="3×+"   label="Remarketing ROAS"   sub="Return on existing content spend" accent={LIME}    />
+          <StatCard icon={Eye}        value="5M+"   label="Content Reach"      sub="Organic + paid combined"          accent={MAGENTA} />
         </div>
 
         <div className="p-8 border-2 flex gap-6 items-start" style={{ borderColor: MAGENTA, background: "rgba(255,0,255,0.04)" }}>
           <Flame size={40} className="shrink-0 mt-1" style={{ color: MAGENTA }} />
           <div>
             <h3 className="text-xl font-black uppercase text-white mb-3" style={D}>
-              Week 12 is a digital report card Geffen and UMG can take straight to their investment committees.
+              Week 12 is a full digital performance report — every number tied to a specific ad or content decision.
             </h3>
             <p className="text-sm text-white/60 leading-relaxed">
-              Streaming velocity on both singles. Ad ROI by platform. Follower growth. Content reach. Playlist adds driven by algorithmic momentum. Every number traceable to a specific ad set or content decision. The label&apos;s next investment ask doesn&apos;t need a pitch — it just needs this data.
+              Streaming velocity on both singles. Ad ROI by platform. Follower growth. Remarketing performance on existing catalog content. Playlist adds from algorithmic momentum. All of it traceable, all of it owned.
             </p>
           </div>
         </div>
@@ -671,31 +671,31 @@ export default function Page() {
       {/* ── 9. THE ASK ────────────────────────────────────────── */}
       <section className="px-4 md:px-8 py-24" id="the-ask" style={{ background: "#0d0d0d" }}>
         <div className="max-w-7xl mx-auto">
-          <Eyebrow>THE ASK · ACTIVATE THE SINGLES</Eyebrow>
+          <Eyebrow>THE PLAN · 12 WEEKS</Eyebrow>
           <h2
             className="font-black uppercase leading-none mb-6"
             style={{ ...D, fontSize: "clamp(2rem,6vw,6rem)" }}
           >
-            Put the full label behind{" "}
-            <span style={{ color: LIME }}>what&apos;s already built.</span>
+            Digital ads and remarketing.<br />
+            <span style={{ color: LIME }}>Starting now.</span>
           </h2>
           <p className="max-w-2xl text-base text-white/60 leading-relaxed mb-14">
-            A $22,750 independent digital campaign — $5K in ad spend, digital ads programming, and three months of full social management — builds the streaming traction. The label&apos;s job is to take that data and add the infrastructure only a major can provide: radio, high-budget video, and a full album rollout.
+            Run targeted ads behind both singles. Remarket the existing content that&apos;s already proven it works — 1.6M TikTok views, 318K YouTube views, 1M+ Spotify streams. Build the audience digitally, consistently, for 12 weeks straight.
           </p>
 
           <div className="grid md:grid-cols-3 gap-4 mb-16">
             {[
               {
-                n: "ASK 01", Icon: Radio, title: "Radio", range: "$150K – $300K",
-                body: "Urban + Rhythmic format push behind 'Talm Bout' and 'Silly Rabbit' — both singles, sequentially activated. Geffen radio team engaged now, not after a proof-of-concept.",
+                n: "01", Icon: Zap, title: "Paid Ads", range: "$5,000",
+                body: "Targeted ad campaigns on Meta, TikTok, and YouTube behind 'Talm Bout' and 'Silly Rabbit'. Audience segments built from existing engagement data. Weekly optimization.",
               },
               {
-                n: "ASK 02", Icon: PlayCircle, title: "Music Video Slate", range: "$75K – $125K",
-                body: "High-budget 'Silly Rabbit' re-cut + 'Talm Bout' performance piece. Two videos that match the quality of the music and the scale of the rollout.",
+                n: "02", Icon: PlayCircle, title: "Remarketing", range: "Included",
+                body: "Retarget people who've already watched the videos, streamed the music, or engaged with the profile. Warm audiences convert faster and cheaper than cold traffic.",
               },
               {
-                n: "ASK 03", Icon: Disc3, title: "Full-Length Album", range: "$200K – $400K",
-                body: "The singles prove the artist. The album builds the legacy. Recording, mixing, mastering, A-list features (Jazze Pha producer chair), packaging + rollout — sequenced after the singles have run.",
+                n: "03", Icon: Disc3, title: "Social Management", range: "$4,750 / mo",
+                body: "2–3 posts daily across all platforms. Content built around proven engagement categories — lifestyle, personality, automotive, music. Consistent. Every day. No gaps.",
               },
             ].map(card => (
               <div
@@ -763,19 +763,19 @@ export default function Page() {
             Let&apos;s get it.
           </h2>
           <p className="text-sm text-white/30 italic mb-10">
-            — T.I., Trap Muzik (2003). And what we say to Geffen/UMG in 2026.
+            Ads. Content. Consistency. Twelve weeks. Let&apos;s run it.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a
               href="#numbers"
               className="px-8 py-4 font-black uppercase text-sm tracking-widest transition-all hover:scale-105"
               style={{ ...D, background: LIME, color: BLACK, boxShadow: `4px 4px 0 ${MAGENTA}` }}
-            >Re-Read The Receipts</a>
+            >See The Numbers</a>
             <a
               href="mailto:miles@devland.us"
               className="px-8 py-4 font-black uppercase text-sm tracking-widest border-2 text-white transition-all hover:scale-105"
               style={{ ...D, borderColor: "rgba(255,255,255,0.5)" }}
-            >Contact The Campaign Team</a>
+            >Start The Campaign</a>
           </div>
         </div>
       </section>
@@ -792,7 +792,7 @@ export default function Page() {
           <div>
             <p className="text-xs font-black tracking-widest uppercase mb-3" style={{ ...D, color: LIME }}>Strategy Reference</p>
             <p className="text-xs text-white/45 leading-relaxed">
-              Modeled on T.I.&apos;s <em>Trap Muzik</em> (Grand Hustle / Atlantic, 2003). Executed for 2026 algorithmic distribution: paid ads on Meta, TikTok, and YouTube; daily content cadence; fully optimized digital presence across all platforms.
+              12-week digital activation: paid ads on Meta, TikTok, and YouTube; remarketing against existing high-performing content; daily content cadence; fully optimized digital presence across all platforms.
             </p>
           </div>
           <div>
@@ -803,7 +803,7 @@ export default function Page() {
           </div>
         </div>
         <div className="border-t border-white/10 pt-6 flex justify-between items-center flex-wrap gap-4">
-          <p className="text-xs text-white/30">© 2026 · For Geffen / UMG A&R review only.</p>
+          <p className="text-xs text-white/30">© 2026 · Juvenile Baby Digital Activation Plan</p>
           <p className="text-xs italic" style={{ color: "rgba(255,255,255,0.3)" }}>
             &quot;From Tampa to the world.&quot; — Juvenile Baby.
           </p>
