@@ -668,7 +668,150 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── 9. THE ASK ────────────────────────────────────────── */}
+      {/* ── 9. GAPS & IDENTITY ───────────────────────────────── */}
+      <section className="px-4 md:px-8 py-24" style={{ background: "#0d0d0d" }}>
+        <div className="max-w-7xl mx-auto">
+          <Eyebrow>GAPS & OPPORTUNITIES</Eyebrow>
+          <h2
+            className="font-black uppercase leading-none mb-4"
+            style={{ ...D, fontSize: "clamp(2rem,6vw,6rem)" }}
+          >
+            Know the gaps.<br />
+            <span style={{ color: LIME }}>Own the identity.</span>
+          </h2>
+          <p className="max-w-2xl text-base text-white/60 leading-relaxed mb-14">
+            The data shows where the audience is. These are the gaps to close and the identity anchors to build the digital strategy around.
+          </p>
+
+          {/* gap cards */}
+          <p className="text-xs font-black tracking-[0.25em] uppercase mb-5" style={{ ...D, color: MAGENTA }}>
+            Audience & Content Gaps
+          </p>
+          <div className="grid md:grid-cols-3 gap-4 mb-16">
+            {[
+              {
+                icon: Users, title: "Female Audience",
+                accent: MAGENTA,
+                problem: "Current content skews heavily male. The firearms and automotive categories dominate — both under-index with women.",
+                fix: "Introduce content that bridges lifestyle, fashion, and relationship identity without abandoning the core. Personality-led content and behind-the-scenes moments attract broader demographics.",
+              },
+              {
+                icon: Disc3, title: "Content Hygiene",
+                accent: YELLOW,
+                problem: "Low-performing posts sitting on the profile dilute the algorithm signal and weaken first impressions for new visitors.",
+                fix: "Archive posts below engagement threshold. Repost the same concepts with updated hooks, better captions, and stronger visuals. Test variations — the idea may be right, the execution may just need a second attempt.",
+              },
+              {
+                icon: Flame, title: "Fan Engagement",
+                accent: LIME,
+                problem: "High view counts on top content but limited direct fan interaction — comments, replies, duets, and community participation.",
+                fix: "Build engagement loops: reply to comments in video, ask direct questions, run response challenges. Community connection turns viewers into followers and followers into fans.",
+              },
+            ].map((card, i) => (
+              <div
+                key={i}
+                className="p-6 border border-white/10 flex flex-col gap-4"
+                style={{ background: "#111", borderTopColor: card.accent, borderTopWidth: 3 }}
+              >
+                <card.icon size={22} style={{ color: card.accent }} />
+                <h3 className="text-base font-black uppercase text-white" style={D}>{card.title}</h3>
+                <div>
+                  <p className="text-xs font-black uppercase mb-1" style={{ color: card.accent }}>The Gap</p>
+                  <p className="text-xs text-white/50 leading-relaxed">{card.problem}</p>
+                </div>
+                <div>
+                  <p className="text-xs font-black uppercase mb-1 text-white">The Fix</p>
+                  <p className="text-xs text-white/50 leading-relaxed">{card.fix}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* identity anchors */}
+          <p className="text-xs font-black tracking-[0.25em] uppercase mb-5" style={{ ...D, color: LIME }}>
+            Identity Anchors · Build These Publicly
+          </p>
+          <div className="grid md:grid-cols-2 gap-4 mb-12">
+            {[
+              {
+                tag: "COLLECTOR", title: "Custom BMW Collector",
+                accent: LIME,
+                desc: "Automotive identity is already in the top engagement categories. Lean all the way in. Document the builds, the culture, the community. Position Juvenile Baby as the artist who lives this — not just references it.",
+                communities: ["BMW M community","Car modification culture","ATL / Tampa car scene","Luxury lifestyle audiences","YouTube car content crossover"],
+                content: ["Build walkthroughs","Meet-the-car reels","Track day content","Parts / mod showcase","Collab with detailers & builders"],
+              },
+              {
+                tag: "ADVOCATE", title: "Gun Rights & Self-Protection Advocate",
+                accent: MAGENTA,
+                desc: "1.6M views on a single firearms post is not an accident. The audience is there and deeply engaged. Build on it with gun safety education, responsible ownership content, and branded shout outs that position him as a credible voice in the 2A community.",
+                communities: ["2A / gun rights communities","Concealed carry audiences","Self-defense & safety spaces","Constitutional identity groups","Southern lifestyle crossover"],
+                content: ["Gun safety education videos","Range day content","Branded shout outs with shops","Responsible ownership messaging","Legal carry / self-defense tips"],
+              },
+            ].map((anchor, i) => (
+              <div
+                key={i}
+                className="relative p-8 border-2 overflow-hidden"
+                style={{ borderColor: anchor.accent, background: "#111" }}
+              >
+                <GlowBlob color={anchor.accent} className="w-64 h-64 -bottom-10 -right-10" />
+                <div className="relative z-10">
+                  <div className="mb-4">
+                    <TapeLabel bg={anchor.accent} rotate="rotate-0">{anchor.tag}</TapeLabel>
+                  </div>
+                  <h3 className="text-2xl font-black uppercase text-white mb-3 leading-tight" style={D}>{anchor.title}</h3>
+                  <p className="text-sm text-white/60 leading-relaxed mb-6">{anchor.desc}</p>
+                  <div className="grid grid-cols-2 gap-6">
+                    <div>
+                      <p className="text-xs font-black uppercase mb-3" style={{ ...D, color: anchor.accent }}>Communities to plug into</p>
+                      <ul className="space-y-1">
+                        {anchor.communities.map(c => (
+                          <li key={c} className="text-xs text-white/50 flex gap-2">
+                            <span style={{ color: anchor.accent }}>·</span>{c}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="text-xs font-black uppercase mb-3" style={{ ...D, color: anchor.accent }}>Content formats</p>
+                      <ul className="space-y-1">
+                        {anchor.content.map(c => (
+                          <li key={c} className="text-xs text-white/50 flex gap-2">
+                            <span style={{ color: anchor.accent }}>·</span>{c}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* community integration strip */}
+          <div className="p-6 border border-white/10" style={{ background: "#111" }}>
+            <p className="text-xs font-black tracking-[0.25em] uppercase mb-5" style={{ ...D, color: YELLOW }}>
+              Community Integration · Where to show up
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[
+                { label: "BMW & Automotive",    subs: ["Car meets","Mod forums","YouTube car culture"] },
+                { label: "2A & Self-Defense",   subs: ["Range communities","Gun safety pages","Constitutional advocacy"] },
+                { label: "Tampa / Southeast",   subs: ["Local rap scenes","FL lifestyle","ATL crossover"] },
+                { label: "Hip-Hop Lifestyle",   subs: ["Street fashion","Entrepreneur identity","Southern rap culture"] },
+              ].map((col, i) => (
+                <div key={i}>
+                  <p className="text-xs font-black uppercase text-white mb-2" style={D}>{col.label}</p>
+                  {col.subs.map(s => (
+                    <p key={s} className="text-xs text-white/40 leading-relaxed">{s}</p>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 10. THE ASK ───────────────────────────────────────── */}
       <section className="px-4 md:px-8 py-24" id="the-ask" style={{ background: "#0d0d0d" }}>
         <div className="max-w-7xl mx-auto">
           <Eyebrow>THE PLAN · 12 WEEKS</Eyebrow>
