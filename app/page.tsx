@@ -16,11 +16,19 @@ const YELLOW  = "#ffe600";
 const BLACK   = "#0a0a0a";
 
 const catalogData = [
-  { track: "How To Step",  year: 2022, views: 295, era: "pre" },
-  { track: "Talm Bout",    year: 2024, views: 76,  era: "geffen" },
-  { track: "Left & Right", year: 2023, views: 53,  era: "pre" },
-  { track: "Silly Rabbit", year: 2024, views: 41,  era: "geffen" },
-  { track: "Demon Time",   year: 2023, views: 28,  era: "pre" },
+  { track: "How To Step",   year: 2022, views: 318, era: "pre" },
+  { track: "Silly Rabbit",  year: 2024, views: 249, era: "geffen" },
+  { track: "I Need Answers",year: 2023, views: 98,  era: "pre" },
+  { track: "Bring Em Out",  year: 2023, views: 89,  era: "pre" },
+  { track: "Talm Bout",     year: 2024, views: 88,  era: "geffen" },
+];
+
+const tiktokData = [
+  { category: "Firearms / Self-Defense",    level: 98 },
+  { category: "Personality Commentary",      level: 82 },
+  { category: "Conversational Lifestyle",    level: 78 },
+  { category: "Automotive Culture",          level: 65 },
+  { category: "Luxury / Motion Visuals",     level: 52 },
 ];
 
 const streamData = [
@@ -188,10 +196,10 @@ export default function Page() {
         {/* stat strip */}
         <div className="grid grid-cols-2 md:grid-cols-4 border border-white/10">
           {[
-            { val: "424K",   label: "YouTube Catalog Views",  sub: "Across top 5 visualizers", accent: LIME    },
-            { val: "55K",    label: "Instagram Followers",    sub: "@juvenilebaby",             accent: MAGENTA },
-            { val: "2",      label: "Singles on Geffen",      sub: "Talm Bout + Silly Rabbit",  accent: YELLOW  },
-            { val: "$22,750", label: "Indie Campaign Total",   sub: "Ads + management, 12 weeks",  accent: "#fff"  },
+            { val: "1M+",    label: "YouTube Catalog Views",   sub: "Across 32 uploaded videos",  accent: LIME    },
+            { val: "1.7M",   label: "TikTok Total Likes",     sub: "21.7K followers",            accent: MAGENTA },
+            { val: "2",      label: "Singles on Geffen",       sub: "Talm Bout + Silly Rabbit",   accent: YELLOW  },
+            { val: "$22,750",label: "Indie Campaign Total",    sub: "Ads + management, 12 weeks", accent: "#fff"  },
           ].map((s, i) => (
             <div
               key={i}
@@ -253,14 +261,14 @@ export default function Page() {
         </h2>
 
         <p className="max-w-3xl text-base text-white/60 leading-relaxed mb-14">
-          &quot;Talm Bout&quot; and &quot;Silly Rabbit&quot; have organic numbers — 76K and 41K YouTube views respectively — with no paid digital spend behind them. No ad campaigns. No consistent content cadence. No optimized platform presence driving listeners to the singles. The music is already working on its own. A targeted digital strategy turns that into compounding traction.
+          &quot;How To Step&quot; has over 1M Spotify streams and 318K YouTube views — with zero paid spend. &quot;Silly Rabbit&quot; has 249K YouTube views as a Geffen single. On TikTok, a single firearms/lifestyle post hit 1.6M views organically. The audience is there. The engagement is real. None of it has had a coordinated digital ad campaign behind it yet.
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14">
-          <StatCard icon={Headphones} value="5.5K"  label="Spotify Monthly"    sub="Pre-campaign baseline"    accent={LIME}    />
-          <StatCard icon={Camera}     value="55K"   label="IG @juvenilebaby"   sub="Organic, Tampa-anchored"  accent={MAGENTA} />
-          <StatCard icon={Video}      value="424K"  label="YouTube Catalog"    sub="Across top 5 visualizers" accent={YELLOW}  />
-          <StatCard icon={Eye}        value="295K"  label="Top Video"          sub="'How To Step' · organic"  accent="#fff"    />
+          <StatCard icon={Headphones} value="1M+"   label="'How To Step' Streams" sub="Spotify · organic, no paid push"   accent={LIME}    />
+          <StatCard icon={Flame}      value="1.7M"  label="TikTok Total Likes"    sub="21.7K followers · @juvenilebaby"  accent={MAGENTA} />
+          <StatCard icon={Video}      value="1M+"   label="YouTube Catalog"        sub="6.18K subs · 32 videos uploaded"  accent={YELLOW}  />
+          <StatCard icon={Eye}        value="318K"  label="Top YouTube Video"      sub="'How To Step' · long-tail views"  accent="#fff"    />
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -301,31 +309,56 @@ export default function Page() {
             </div>
           </div>
 
-          {/* press list */}
-          <div className="p-6 border border-white/10 flex flex-col gap-4" style={{ background: "#111" }}>
-            <p className="text-xs font-black tracking-widest uppercase mb-2" style={{ ...D, color: YELLOW }}>
-              Press & Industry Footprint
-            </p>
-            {[
-              { outlet: "The Hype Magazine",  headline: "Juvenile Baby — Talm Bout",                            date: "Aug 2024", type: "Single Premiere" },
-              { outlet: "Static Multimedia",  headline: "Geffen Records Artist Juvenile Baby Drops New Single", date: "Aug 2024", type: "Label Feature" },
-              { outlet: "antiMusic",          headline: "Juvenile Baby Delivers 'Silly Rabbit' Video",          date: "Nov 2024", type: "Video Premiere" },
-              { outlet: "On The Radar Radio", headline: "Silly Rabbit — Live Performance",                      date: "2024",     type: "Performance" },
-            ].map((p, i) => (
-              <div key={i} className="flex gap-3 items-start border-l-2 pl-3" style={{ borderColor: LIME }}>
-                <div className="flex-1">
-                  <div className="mb-1">
-                    <TapeLabel rotate="rotate-0">{p.type}</TapeLabel>
+          {/* TikTok engagement diagnostic */}
+          <div className="p-6 border border-white/10 flex flex-col gap-5" style={{ background: "#111" }}>
+            <div>
+              <p className="text-xs font-black tracking-widest uppercase mb-1" style={{ ...D, color: YELLOW }}>
+                TikTok Engagement · By Category
+              </p>
+              <p className="text-xs text-white/40 mb-4">Audience response signal relative to total content output</p>
+              <div className="space-y-3">
+                {tiktokData.map((row) => (
+                  <div key={row.category}>
+                    <div className="flex justify-between mb-1">
+                      <span className="text-xs text-white/60">{row.category}</span>
+                      <span className="text-xs font-black" style={{ color: row.level >= 90 ? LIME : row.level >= 70 ? MAGENTA : YELLOW }}>
+                        {row.level >= 90 ? "Extremely High" : row.level >= 70 ? "High" : "Moderate–High"}
+                      </span>
+                    </div>
+                    <div className="h-1.5 w-full bg-white/10">
+                      <div
+                        className="h-full transition-all"
+                        style={{
+                          width: `${row.level}%`,
+                          background: row.level >= 90 ? LIME : row.level >= 70 ? MAGENTA : YELLOW,
+                        }}
+                      />
+                    </div>
                   </div>
-                  <p className="text-sm font-semibold text-white leading-snug">{p.outlet}</p>
-                  <p className="text-xs text-white/50 italic">&quot;{p.headline}&quot; — {p.date}</p>
-                </div>
+                ))}
               </div>
-            ))}
-            <div className="mt-2 p-4 border border-lime-500/30" style={{ background: "rgba(57,255,20,0.05)" }}>
+            </div>
+
+            <div className="border-t border-white/10 pt-4 space-y-3">
+              <p className="text-xs font-black tracking-widest uppercase" style={{ ...D, color: YELLOW }}>
+                Top TikTok Posts
+              </p>
+              {[
+                { title: "Glock Just Popped they Big One",              views: "1.6M+ views" },
+                { title: "How I Conceal Carry my Micro Draco Everyday", views: "682.9K+ views" },
+                { title: "F1 Got a New Star Otw",                       views: "13.8K+ views" },
+              ].map((v, i) => (
+                <div key={i} className="flex justify-between items-center border-l-2 pl-3" style={{ borderColor: LIME }}>
+                  <p className="text-xs text-white/70 leading-snug pr-4">{v.title}</p>
+                  <span className="text-xs font-black shrink-0" style={{ color: LIME }}>{v.views}</span>
+                </div>
+              ))}
+            </div>
+
+            <div className="p-3 border border-lime-500/30" style={{ background: "rgba(57,255,20,0.05)" }}>
               <p className="text-xs text-white/70 leading-relaxed">
-                <span className="font-black text-white">Note for A&R:</span>{" "}
-                Press is light because radio + national PR haven&apos;t been funded yet. The campaign below fixes that.
+                <span className="font-black text-white">Key insight:</span>{" "}
+                The audience responds to the artist as a personality and lifestyle figure, not only as a music act. Ads and content should lead with identity, not just singles.
               </p>
             </div>
           </div>
@@ -355,10 +388,10 @@ export default function Page() {
                 In <strong className="text-white">2003, T.I. built dominance through radio and street teams.</strong> In 2026, the equivalent infrastructure is digital — paid social ads, algorithmic content, and a presence that follows a listener from TikTok to Spotify to YouTube without a single drop-off. Same playbook, different channels.
               </p>
               <p>
-                Juvenile Baby has the music and the identity. What&apos;s missing is the digital engine: consistent ad spend driving both singles to new ears, a daily content cadence that feeds the algorithm, and a fully optimized online presence that converts curious listeners into actual fans. None of that requires a radio budget — it requires discipline and spend.
+                Juvenile Baby has the music and the identity. The TikTok diagnostic makes it clear: the audience responds to him as a <em>personality</em> — firearms culture, automotive lifestyle, and direct commentary outperform music-only posts at every level. The digital strategy leads with that. Personality-first content drives the algorithm, and the singles ride the momentum.
               </p>
               <p>
-                <strong className="text-white">Twelve weeks of focused digital activation</strong> — ads on Meta, TikTok, and YouTube, 2–3 posts every day, and every platform profile locked and consistent — builds the streaming velocity and audience growth that makes the label&apos;s next investment decision straightforward.
+                <strong className="text-white">Twelve weeks of focused digital activation</strong> — ads on Meta, TikTok, and YouTube targeted at proven audience categories, 2–3 posts daily rooted in lifestyle and identity, and every platform profile locked and consistent — builds the streaming velocity and audience growth that makes the label&apos;s next investment decision straightforward.
               </p>
             </div>
 
@@ -423,7 +456,7 @@ export default function Page() {
             },
             {
               n: "02", Icon: Disc3, title: "Content", accent: MAGENTA,
-              body: "2–3 short-form posts daily. Visualizers, behind-the-scenes, performance clips, lifestyle. The algorithm rewards volume and consistency — we give it both.",
+              body: "2–3 posts daily built around proven engagement categories: firearms/lifestyle, automotive, personality commentary, and music. The audience already responds to all of it — consistent content locks in the algorithm.",
             },
             {
               n: "03", Icon: MapPin, title: "Online Consistency", accent: YELLOW,
