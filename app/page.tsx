@@ -222,11 +222,11 @@ export default function Page() {
               style={{ ...D, color: LIME }}
             >
               <Flame size={14} />
-              <span>Two Singles. Full Push.</span>
+              <span>Run The Ads</span>
               <Star size={14} style={{ color: YELLOW }} />
-              <span style={{ color: "rgba(255,255,255,0.7)" }}>Tampa → South → Nation</span>
+              <span style={{ color: "rgba(255,255,255,0.7)" }}>Post Every Day</span>
               <Flame size={14} />
-              <span style={{ color: MAGENTA }}>Activate The Artist</span>
+              <span style={{ color: MAGENTA }}>Stay Consistent</span>
             </span>
           ))}
         </div>
@@ -345,8 +345,8 @@ export default function Page() {
             className="font-black uppercase leading-none mb-12"
             style={{ ...D, fontSize: "clamp(2rem,6vw,6rem)" }}
           >
-            The label doesn&apos;t develop<br />the artist.<br />
-            The label <span style={{ color: LIME }}>scales</span> the artist.
+            The work is ads,<br />content, and consistency.<br />
+            The label <span style={{ color: LIME }}>adds the scale.</span>
           </h2>
 
           <div className="grid md:grid-cols-2 gap-12">
@@ -415,23 +415,23 @@ export default function Page() {
           className="font-black uppercase leading-none mb-14"
           style={{ ...D, fontSize: "clamp(2rem,6vw,6rem)" }}
         >
-          Three pillars.<br />
-          <span style={{ color: LIME }}>One playbook.</span>
+          Three workstreams.<br />
+          <span style={{ color: LIME }}>One outcome.</span>
         </h2>
 
         <div className="grid md:grid-cols-3 gap-4 mb-16">
           {[
             {
-              n: "01", Icon: Disc3, title: "Two-Single Sequence", accent: LIME,
-              body: "Re-position 'Talm Bout' as the warm-up and 'Silly Rabbit' as the knockout. Sequential momentum, exactly like Trap Muzik's '24's' into 'Be Easy'.",
+              n: "01", Icon: Zap, title: "Paid Ads", accent: LIME,
+              body: "Targeted spend behind 'Talm Bout' and 'Silly Rabbit' across Meta, TikTok, and YouTube. Every dollar tracked. Budgets adjusted weekly based on what's converting.",
             },
             {
-              n: "02", Icon: MapPin, title: "Tampa → South → Nation", accent: MAGENTA,
-              body: "Own Tampa/FL first, then expand to ATL/HOU/NOLA/MEM, then national. Geographic discipline is what made T.I. inevitable.",
+              n: "02", Icon: Disc3, title: "Content", accent: MAGENTA,
+              body: "2–3 short-form posts daily. Visualizers, behind-the-scenes, performance clips, lifestyle. The algorithm rewards volume and consistency — we give it both.",
             },
             {
-              n: "03", Icon: Zap, title: "Guerrilla Content & Influencer Engine", accent: YELLOW,
-              body: "2–3 short-form daily posts, paid micro/mid-tier influencer placements, UGC campaigns, and a 'Becoming Juvenile Baby' doc series running through the rollout.",
+              n: "03", Icon: MapPin, title: "Online Consistency", accent: YELLOW,
+              body: "Same story across every platform, every day. Bio, links, DSP profiles, posting cadence — all locked in. A&R should be able to pull up any page and see an artist ready for the next level.",
             },
           ].map(card => (
             <div
@@ -452,24 +452,24 @@ export default function Page() {
         </div>
 
         <p className="text-xs font-black tracking-widest uppercase mb-6" style={{ ...D, color: LIME }}>
-          Geographic Expansion · 3 Phases
+          What Each Workstream Covers
         </p>
         <div className="grid md:grid-cols-3 gap-4">
           {[
             {
-              phase: "PHASE 1", weeks: "Weeks 1-4", region: "Tampa / FL Dominance",
-              chips: ["Tampa","Miami","Orlando","Jacksonville"],
-              tag: "Home Base", accent: LIME,
+              phase: "PAID ADS", weeks: "Weeks 1-12", region: "Meta · TikTok · YouTube",
+              chips: ["Single targeting","Retargeting","Lookalike audiences","Weekly creative refresh","ROI tracked per dollar"],
+              tag: "Always On", accent: LIME,
             },
             {
-              phase: "PHASE 2", weeks: "Weeks 5-8", region: "Southern Expansion",
-              chips: ["Atlanta","Houston","New Orleans","Charlotte","Memphis"],
-              tag: "Own The South", accent: MAGENTA,
+              phase: "CONTENT", weeks: "Weeks 1-12", region: "2–3 Posts Daily",
+              chips: ["Visualizers","Behind-the-scenes","Performance clips","Lifestyle","TikTok hooks"],
+              tag: "Every Day", accent: MAGENTA,
             },
             {
-              phase: "PHASE 3", weeks: "Weeks 9-12", region: "National Push",
-              chips: ["LA","NYC","Chicago","Nationwide"],
-              tag: "Scale", accent: YELLOW,
+              phase: "ONLINE CONSISTENCY", weeks: "Weeks 1-12", region: "All Platforms Locked",
+              chips: ["Instagram","TikTok","YouTube","Spotify profile","Apple Music","Link in bio"],
+              tag: "No Gaps", accent: YELLOW,
             },
           ].map((p, i) => (
             <div
@@ -553,32 +553,32 @@ export default function Page() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {[
               {
-                wk: "WK 1-2", title: "Tampa Launch", accent: LIME,
-                items: ["'Talm Bout' re-push + new visualizer","Tampa street teams deploy","Content engine: 2-3 posts/day","Doc Ep. 1 release"],
+                wk: "WK 1-2", title: "Launch Ads", accent: LIME,
+                items: ["'Talm Bout' ad campaign live on Meta + TikTok","Baseline spend established, tracking pixels set","Content engine starts: 2-3 posts/day","Profile audit — all platforms locked and consistent"],
               },
               {
-                wk: "WK 3-4", title: "Florida Expansion", accent: LIME,
-                items: ["Miami, Orlando, Jacksonville activations","Influencer campaign launch","DSP playlist pitch wave","TikTok hook testing"],
+                wk: "WK 3-4", title: "Content Volume", accent: LIME,
+                items: ["Daily posting cadence locked in","Visualizer + behind-the-scenes content drops","TikTok hooks A/B tested","Ad creative refreshed based on Week 1-2 data"],
               },
               {
-                wk: "WK 5-6", title: "Digital Amplification", accent: MAGENTA,
-                items: ["Scale micro→mid-tier influencer placements","FL press coverage push","Podcast circuit begins","Email/SMS list + UGC"],
+                wk: "WK 5-6", title: "Scale What Converts", accent: MAGENTA,
+                items: ["Double spend on top-performing ad sets","YouTube pre-roll added behind 'Silly Rabbit'","Content expanded to performance clips + lifestyle","DSP profile and playlist pitch wave"],
               },
               {
-                wk: "WK 7", title: "Strategic Launch", accent: MAGENTA,
-                items: ["'Silly Rabbit' re-launch w/ high-budget MV","Content scaled to 3-4 posts/day","+50% paid social spend"],
+                wk: "WK 7", title: "'Silly Rabbit' Push", accent: MAGENTA,
+                items: ["Full ad campaign pivots to 'Silly Rabbit'","Content scaled to 3-4 posts/day","Retargeting campaigns activated","+50% paid social budget"],
               },
               {
-                wk: "WK 8-9", title: "National Saturation", accent: YELLOW,
-                items: ["LA / NYC / ATL influencer wave","National DSP playlist push","Major press (Complex, XXL, FADER)","Breakfast Club / Drink Champs pursuit"],
+                wk: "WK 8-9", title: "Consistency Compounds", accent: YELLOW,
+                items: ["Both singles running ads simultaneously","Content machine at full speed — no gaps","Email/SMS list growth push","Engagement rate tracked and optimized weekly"],
               },
               {
-                wk: "WK 10-11", title: "Performance Circuit", accent: YELLOW,
-                items: ["FL + Southern tour","Tampa / Miami / ATL / HOU / NOLA","Performance video release","Sustained media"],
+                wk: "WK 10-11", title: "Maintain & Measure", accent: YELLOW,
+                items: ["Ad spend maintained at peak level","Content cadence held — no slowdown","Press + playlist results documented","Full analytics report being built"],
               },
               {
-                wk: "WK 12", title: "Album Announce", accent: "#ffffff",
-                items: ["Full project + release date reveal","Pre-order w/ exclusive content","Remix w/ feature artist","Doc finale"],
+                wk: "WK 12", title: "Deliver The Report", accent: "#ffffff",
+                items: ["12-week metrics compiled for label","Streaming velocity on both singles","Follower growth, ad ROI, content reach","Label investment ask backed by receipts"],
               },
             ].map((card, i) => (
               <div
