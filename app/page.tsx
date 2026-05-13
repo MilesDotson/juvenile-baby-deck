@@ -590,12 +590,20 @@ export default function Page() {
                 items: ["Daily posting cadence locked in","Visualizer + behind-the-scenes content drops","TikTok hooks A/B tested","Ad creative refreshed based on Week 1-2 data"],
               },
               {
+                wk: "WK 3+", title: "Fan Accounts", accent: MAGENTA,
+                items: ["Identify top fan accounts on TikTok + IG — DM outreach starts","Seed fan accounts with exclusive clips, early drops, and behind-the-scenes","Repost and amplify fan-created content to close the engagement loop","Create a fan hashtag to aggregate organic posts across platforms"],
+              },
+              {
                 wk: "WK 5-6", title: "Scale What Converts", accent: MAGENTA,
                 items: ["Double spend on top-performing ad sets","YouTube pre-roll added behind 'Silly Rabbit'","Content expanded to performance clips + lifestyle","DSP profile and playlist pitch wave"],
               },
               {
                 wk: "WK 7", title: "'Silly Rabbit' Push", accent: MAGENTA,
                 items: ["Full ad campaign pivots to 'Silly Rabbit'","Content scaled to 3-4 posts/day","Retargeting campaigns activated","+50% paid social budget"],
+              },
+              {
+                wk: "WK 5+", title: "UGC Campaign", accent: LIME,
+                items: ["Sound challenge launched on TikTok — 'Silly Rabbit' audio seeded to fan accounts","Fan content incentivized: reposts, shout outs, and exclusive access","Run paid ads against top-performing UGC to amplify organic reach","UGC volume tracked weekly as a campaign health signal"],
               },
               {
                 wk: "WK 8-9", title: "Consistency Compounds", accent: YELLOW,
