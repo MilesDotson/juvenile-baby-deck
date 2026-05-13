@@ -94,7 +94,7 @@ function StatCard({
         className="text-4xl font-black leading-none"
         style={{ fontFamily: "'Anton', 'Arial Black', sans-serif", color: accent }}
       >{value}</div>
-      <div className="text-sm font-semibold text-white">{label}</div>
+      <div className="text-sm font-normal text-white">{label}</div>
       <div className="text-xs text-white/40">{sub}</div>
     </div>
   );
@@ -117,11 +117,11 @@ export default function Page() {
               className="w-8 h-8 flex items-center justify-center text-xs font-black rotate-3 shrink-0"
               style={{ ...D, background: LIME, color: BLACK }}
             >JB</span>
-            <span className="text-xs font-semibold tracking-widest uppercase hidden sm:block text-white/70">
+            <span className="text-xs font-normal tracking-widest uppercase hidden sm:block text-white/70">
               Juvenile Baby × Geffen/UMG
             </span>
           </div>
-          <div className="hidden md:flex items-center gap-6 text-xs font-semibold tracking-widest uppercase text-white/50">
+          <div className="hidden md:flex items-center gap-6 text-xs font-normal tracking-widest uppercase text-white/50">
             {[
               ["Numbers","#numbers"],
               ["Thesis","#thesis"],
@@ -210,7 +210,7 @@ export default function Page() {
                 className="text-4xl md:text-5xl font-black leading-none mb-1"
                 style={{ ...D, color: s.accent }}
               >{s.val}</div>
-              <div className="text-xs font-semibold text-white uppercase tracking-wider">{s.label}</div>
+              <div className="text-xs font-normal text-white uppercase tracking-wider">{s.label}</div>
               <div className="text-xs text-white/40 mt-1">{s.sub}</div>
             </div>
           ))}

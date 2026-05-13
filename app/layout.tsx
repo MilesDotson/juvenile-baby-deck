@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Anton, Inter } from "next/font/google";
+import { Anton } from "next/font/google";
 import "./globals.css";
 
 const anton = Anton({
@@ -8,14 +8,9 @@ const anton = Anton({
   variable: "--font-anton",
 });
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
-
 export const metadata: Metadata = {
-  title: "Juvenile Baby × Geffen/UMG — Re-Investment Deck 2026",
-  description: "The Juvenile Baby Scaling Plan. From Tampa to the World.",
+  title: "Juvenile Baby — Digital Activation Plan 2026",
+  description: "12-week digital ads and remarketing plan for Juvenile Baby.",
 };
 
 export default function RootLayout({
@@ -24,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${anton.variable} ${inter.variable}`}>
+    <html lang="en" className={anton.variable}>
       <body>{children}</body>
     </html>
   );
