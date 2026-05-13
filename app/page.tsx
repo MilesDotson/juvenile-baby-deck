@@ -787,6 +787,78 @@ export default function Page() {
             ))}
           </div>
 
+          {/* cultural moment panel */}
+          <div className="relative overflow-hidden border-2 p-8 mb-4" style={{ borderColor: YELLOW, background: "#111" }}>
+            <GlowBlob color={YELLOW} className="w-96 h-96 -top-20 -right-20" />
+            <div className="relative z-10">
+              <div className="flex items-start justify-between flex-wrap gap-4 mb-6">
+                <div>
+                  <TapeLabel bg={YELLOW} rotate="rotate-0">THE CULTURAL MOMENT</TapeLabel>
+                  <h3
+                    className="font-black uppercase leading-tight mt-4 text-white"
+                    style={{ ...D, fontSize: "clamp(1.5rem,3.5vw,3rem)" }}
+                  >
+                    He&apos;s not chasing the moment.<br />
+                    <span style={{ color: YELLOW }}>The moment found him.</span>
+                  </h3>
+                </div>
+              </div>
+
+              <p className="max-w-3xl text-sm text-white/65 leading-relaxed mb-10">
+                The national conversation right now — pro-America policy, expanded military identity, self-defense rights, and evolving firearms laws in Florida — maps directly onto the content categories where Juvenile Baby already has his strongest audience response. He didn&apos;t position himself to fit the moment. He was already there. The strategy is to make that alignment visible and intentional without making him a political spokesperson. Politically ambiguous. Culturally unmistakable.
+              </p>
+
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                {[
+                  {
+                    label: "Pro-America Policy",
+                    context: "The current administration's America-first identity creates mainstream space for patriotic, self-reliant content. His audience lives here.",
+                    accent: YELLOW,
+                  },
+                  {
+                    label: "Military & National Identity",
+                    context: "Expanded military budget and heightened national pride narrative — strength, protection, and self-sufficiency are culturally dominant themes right now.",
+                    accent: LIME,
+                  },
+                  {
+                    label: "Florida Self-Defense Laws",
+                    context: "Constitutional carry and Stand Your Ground expansion in Florida puts his home state at the center of the national self-defense conversation.",
+                    accent: MAGENTA,
+                  },
+                  {
+                    label: "2A Rights National Debate",
+                    context: "Gun rights are front-page. His firearms content hits differently when the broader culture is actively debating the same topics he covers daily.",
+                    accent: YELLOW,
+                  },
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="p-4 border border-white/10"
+                    style={{ borderTopColor: item.accent, borderTopWidth: 3, background: "rgba(0,0,0,0.4)" }}
+                  >
+                    <p className="text-xs font-black uppercase text-white mb-2" style={D}>{item.label}</p>
+                    <p className="text-xs text-white/45 leading-relaxed">{item.context}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="p-5 border border-white/10" style={{ background: "rgba(0,0,0,0.4)" }}>
+                  <p className="text-xs font-black uppercase mb-2" style={{ ...D, color: LIME }}>The NRA Energy</p>
+                  <p className="text-xs text-white/60 leading-relaxed">
+                    His firearms commentary carries the kind of credibility that gets respect in 2A circles without alienating music listeners. He talks about guns the way someone who actually carries talks about guns — practical, personal, and grounded. That authenticity is rare in rap and extremely valuable in the current climate.
+                  </p>
+                </div>
+                <div className="p-5 border border-white/10" style={{ background: "rgba(0,0,0,0.4)" }}>
+                  <p className="text-xs font-black uppercase mb-2" style={{ ...D, color: MAGENTA }}>Politically Ambiguous · By Design</p>
+                  <p className="text-xs text-white/60 leading-relaxed">
+                    He doesn&apos;t endorse candidates. He doesn&apos;t take party lines. He talks about self-reliance, protection, and freedom — values that land across the political spectrum. That ambiguity is an asset. It keeps every door open while the cultural alignment does the work.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* community integration strip */}
           <div className="p-6 border border-white/10" style={{ background: "#111" }}>
             <p className="text-xs font-black tracking-[0.25em] uppercase mb-5" style={{ ...D, color: YELLOW }}>
