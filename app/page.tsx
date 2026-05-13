@@ -169,7 +169,7 @@ export default function Page() {
         </p>
 
         <p className="max-w-2xl text-base md:text-lg text-white/70 leading-relaxed mb-10">
-          Two Geffen singles. A proven organic catalog. A 55K Tampa fanbase already moving. This brief is about what happens when the label puts its full weight behind an artist who has already done the hardest part — building something real. &apos;Talm Bout&apos; set the stage. &apos;Silly Rabbit&apos; is the knockout. Both deserve the full push. Now.
+          Two Geffen singles in market. Zero paid digital activation behind either one. This plan runs a focused 12-week digital campaign — targeted ads, daily content, and a locked online presence — to build real streaming traction on both singles and hand the label a data-backed case for what comes next.
         </p>
 
         <div className="flex flex-wrap gap-4 mb-16">
@@ -253,7 +253,7 @@ export default function Page() {
         </h2>
 
         <p className="max-w-3xl text-base text-white/60 leading-relaxed mb-14">
-          &quot;Talm Bout&quot; and &quot;Silly Rabbit&quot; are two of the most underpromoted singles on Geffen&apos;s current roster. Both have press. Both have organic momentum. Both have a growing fanbase anchored in Tampa and spreading outward. Neither has had radio servicing, a high-budget video, or a coordinated national push. That&apos;s not a gap — that&apos;s an opportunity that&apos;s been sitting open since August 2024.
+          &quot;Talm Bout&quot; and &quot;Silly Rabbit&quot; have organic numbers — 76K and 41K YouTube views respectively — with no paid digital spend behind them. No ad campaigns. No consistent content cadence. No optimized platform presence driving listeners to the singles. The music is already working on its own. A targeted digital strategy turns that into compounding traction.
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14">
@@ -352,17 +352,13 @@ export default function Page() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-6 text-base text-white/65 leading-relaxed">
               <p>
-                In <strong className="text-white">2003, T.I. dropped Trap Muzik</strong> and rewired Southern hip-hop.
-                It wasn&apos;t one moment — it was a sequence: regional dominance, producer credibility (Jazze Pha),
-                two strategic singles, and relentless visibility. By the time radio caught up, the streets had already decided.
+                In <strong className="text-white">2003, T.I. built dominance through radio and street teams.</strong> In 2026, the equivalent infrastructure is digital — paid social ads, algorithmic content, and a presence that follows a listener from TikTok to Spotify to YouTube without a single drop-off. Same playbook, different channels.
               </p>
               <p>
-                Juvenile Baby is in the same position T.I. was in pre-<em>Trap Muzik</em>: authentic local identity,
-                a sound that fits the moment, an underrepresented home market (Tampa, not Atlanta), and a label deal
-                that&apos;s ready to be activated.
+                Juvenile Baby has the music and the identity. What&apos;s missing is the digital engine: consistent ad spend driving both singles to new ears, a daily content cadence that feeds the algorithm, and a fully optimized online presence that converts curious listeners into actual fans. None of that requires a radio budget — it requires discipline and spend.
               </p>
               <p>
-                <strong className="text-white">The opportunity isn&apos;t developing him — he&apos;s developed.</strong> The opportunity is activating two singles that are sitting in market with real momentum and zero radio support. &quot;Talm Bout&quot; set the stage. &quot;Silly Rabbit&quot; is the knockout. Every week they sit without a full push is a week a competitor&apos;s A&R finds the next Rod Wave first.
+                <strong className="text-white">Twelve weeks of focused digital activation</strong> — ads on Meta, TikTok, and YouTube, 2–3 posts every day, and every platform profile locked and consistent — builds the streaming velocity and audience growth that makes the label&apos;s next investment decision straightforward.
               </p>
             </div>
 
@@ -630,10 +626,10 @@ export default function Page() {
           <Flame size={40} className="shrink-0 mt-1" style={{ color: MAGENTA }} />
           <div>
             <h3 className="text-xl font-black uppercase text-white mb-3" style={D}>
-              Week 12 is what Geffen and UMG take to their investment committees — not a pitch, a report card.
+              Week 12 is a digital report card Geffen and UMG can take straight to their investment committees.
             </h3>
             <p className="text-sm text-white/60 leading-relaxed">
-              Not vibes — receipts. Streaming velocity on both singles, social growth, press coverage, influencer reach, and a direct-to-fan list all moving in the same direction. By Week 12, the label&apos;s ask to the committee writes itself.
+              Streaming velocity on both singles. Ad ROI by platform. Follower growth. Content reach. Playlist adds driven by algorithmic momentum. Every number traceable to a specific ad set or content decision. The label&apos;s next investment ask doesn&apos;t need a pitch — it just needs this data.
             </p>
           </div>
         </div>
@@ -651,7 +647,7 @@ export default function Page() {
             <span style={{ color: LIME }}>what&apos;s already built.</span>
           </h2>
           <p className="max-w-2xl text-base text-white/60 leading-relaxed mb-14">
-            Two singles are in market. Both have organic momentum. Neither has had full radio servicing, a high-budget video, or coordinated national press. This is what Geffen/UMG&apos;s full activation looks like when the label decides to actually push them — a tri-pillar commitment that turns Tampa traction into a national release.
+            The 12-week digital campaign builds the streaming traction. The label&apos;s job is to take that traction and add the infrastructure only a major can provide — radio, high-budget video, and a full album rollout. Here&apos;s what that commitment looks like in three parts.
           </p>
 
           <div className="grid md:grid-cols-3 gap-4 mb-16">
@@ -690,11 +686,11 @@ export default function Page() {
             <div>
               <TapeLabel>THE MATH</TapeLabel>
               <h3 className="text-3xl font-black uppercase mt-4 mb-3 text-white leading-tight" style={D}>
-                $86.5K of indie spend earns{" "}
+                $86.5K of digital spend earns{" "}
                 <span style={{ color: LIME }}>$425K–$825K</span> of label investment.
               </h3>
               <p className="text-sm text-white/55 leading-relaxed">
-                The independent campaign runs the digital and street playbook. The label activates radio, video, and album — the machinery only a major can move. Every dollar the artist&apos;s team puts in unlocks 5×–10× in label commitment. That&apos;s why this works. The singles are the proof. The push is the ask.
+                The artist&apos;s team runs the digital campaign — ads, content, consistency — and delivers 12 weeks of measurable streaming growth. The label brings radio, video, and album spend on the back of that data. Independent digital spend is the unlock. Label infrastructure is the multiplier.
               </p>
             </div>
             <div className="flex flex-col justify-center">
@@ -765,7 +761,7 @@ export default function Page() {
           <div>
             <p className="text-xs font-black tracking-widest uppercase mb-3" style={{ ...D, color: LIME }}>Strategy Reference</p>
             <p className="text-xs text-white/45 leading-relaxed">
-              Modeled on T.I.&apos;s <em>Trap Muzik</em> (Grand Hustle / Atlantic, 2003). Adapted for 2026 algorithmic distribution: short-form video first, influencer-amplified, regional-to-national geographic discipline.
+              Modeled on T.I.&apos;s <em>Trap Muzik</em> (Grand Hustle / Atlantic, 2003). Executed for 2026 algorithmic distribution: paid ads on Meta, TikTok, and YouTube; daily content cadence; fully optimized digital presence across all platforms.
             </p>
           </div>
           <div>
