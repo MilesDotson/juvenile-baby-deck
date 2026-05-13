@@ -199,7 +199,7 @@ export default function Page() {
             { val: "1M+",    label: "YouTube Catalog Views",   sub: "Across 32 uploaded videos",  accent: LIME    },
             { val: "1.7M",   label: "TikTok Total Likes",     sub: "21.7K followers",            accent: MAGENTA },
             { val: "2",      label: "Singles on Geffen",       sub: "Talm Bout + Silly Rabbit",   accent: YELLOW  },
-            { val: "$22,750",label: "Indie Campaign Total",    sub: "Ads + management, 12 weeks", accent: "#fff"  },
+            { val: "$8,500", label: "Campaign Starting Cost",   sub: "Service fee + ad budget",    accent: "#fff"  },
           ].map((s, i) => (
             <div
               key={i}
@@ -680,35 +680,42 @@ export default function Page() {
             <span style={{ color: LIME }}>Starting now.</span>
           </h2>
           <p className="max-w-2xl text-base text-white/60 leading-relaxed mb-14">
-            Run targeted ads behind both singles. Remarket the existing content that&apos;s already proven it works — 1.6M TikTok views, 318K YouTube views, 1M+ Spotify streams. Build the audience digitally, consistently, for 12 weeks straight.
+            Run targeted ads behind both singles. Remarket the existing content that&apos;s already proven it works — 1.6M TikTok views, 318K YouTube views, 1M+ Spotify streams. The core campaign starts at $8,500: service fee plus ad budget. Social media management is available as an add-on.
           </p>
 
           <div className="grid md:grid-cols-3 gap-4 mb-16">
             {[
               {
-                n: "01", Icon: Zap, title: "Paid Ads", range: "$5,000",
-                body: "Targeted ad campaigns on Meta, TikTok, and YouTube behind 'Talm Bout' and 'Silly Rabbit'. Audience segments built from existing engagement data. Weekly optimization.",
+                n: "01", Icon: Zap, title: "Service Fee", range: "$3,500",
+                tag: null,
+                accent: LIME,
+                body: "Digital ads strategy, campaign setup, audience targeting, creative direction, and performance management across Meta, TikTok, and YouTube for the full 12-week run.",
               },
               {
-                n: "02", Icon: PlayCircle, title: "Remarketing", range: "Included",
-                body: "Retarget people who've already watched the videos, streamed the music, or engaged with the profile. Warm audiences convert faster and cheaper than cold traffic.",
+                n: "02", Icon: Target, title: "Ad Budget", range: "$5,000",
+                tag: null,
+                accent: MAGENTA,
+                body: "Paid directly to the platforms — Meta, TikTok, YouTube. This is the spend that puts both singles and existing content in front of new and warm audiences. Every dollar tracked.",
               },
               {
                 n: "03", Icon: Disc3, title: "Social Management", range: "$4,750 / mo",
-                body: "2–3 posts daily across all platforms. Content built around proven engagement categories — lifestyle, personality, automotive, music. Consistent. Every day. No gaps.",
+                tag: "Optional",
+                accent: YELLOW,
+                body: "Full social media management — 2–3 posts daily, content creation, scheduling, and community engagement across all platforms. Add-on to the core campaign.",
               },
             ].map(card => (
               <div
                 key={card.n}
                 className="relative p-7 border-2 hover:-translate-y-2 transition-transform"
-                style={{ borderColor: LIME, background: "#111" }}
+                style={{ borderColor: card.accent, background: "#111" }}
               >
-                <div className="absolute top-0 right-0">
-                  <TapeLabel bg={LIME}>{card.n}</TapeLabel>
+                <div className="absolute top-0 right-0 flex gap-1">
+                  {card.tag && <TapeLabel bg="#333" rotate="rotate-0">{card.tag}</TapeLabel>}
+                  <TapeLabel bg={card.accent}>{card.n}</TapeLabel>
                 </div>
-                <card.Icon size={28} className="mb-4" style={{ color: LIME }} />
+                <card.Icon size={28} className="mb-4" style={{ color: card.accent }} />
                 <h3 className="text-lg font-black uppercase text-white mb-2" style={D}>{card.title}</h3>
-                <div className="text-3xl font-black mb-3" style={{ ...D, color: LIME }}>{card.range}</div>
+                <div className="text-3xl font-black mb-3" style={{ ...D, color: card.accent }}>{card.range}</div>
                 <p className="text-sm text-white/55 leading-relaxed">{card.body}</p>
               </div>
             ))}
@@ -719,28 +726,35 @@ export default function Page() {
             <div>
               <TapeLabel>THE MATH</TapeLabel>
               <h3 className="text-3xl font-black uppercase mt-4 mb-3 text-white leading-tight" style={D}>
-                <span style={{ color: LIME }}>$22,750</span> total. 12 weeks. Full digital activation.
+                <span style={{ color: LIME }}>$8,500</span> to start.<br />Social management optional.
               </h3>
               <p className="text-sm text-white/55 leading-relaxed">
-                Ad spend, ads programming, and three months of full social management — everything needed to run a focused, consistent digital campaign behind both singles and deliver measurable results.
+                The core campaign is service fee plus ad budget — $8,500 gets both singles running with full digital ad management for 12 weeks. Social media management is a separate add-on at $4,750/month.
               </p>
             </div>
             <div className="flex flex-col justify-center">
               {[
-                { label: "Ad Spend (12 weeks)",                    amount: "$5,000",          accent: "rgba(255,255,255,0.8)", bold: false },
-                { label: "Digital Ads Programming",                amount: "$3,500",          accent: "rgba(255,255,255,0.8)", bold: false },
-                { label: "Social Management (3 mo. × $4,750)",     amount: "$14,250",         accent: "rgba(255,255,255,0.8)", bold: false },
-                { label: "Total Campaign Investment",              amount: "$22,750",         accent: LIME,                   bold: true  },
+                { label: "Service Fee",                             amount: "$3,500",   accent: "rgba(255,255,255,0.8)", bold: false, note: null         },
+                { label: "Ad Budget (platforms)",                   amount: "$5,000",   accent: "rgba(255,255,255,0.8)", bold: false, note: null         },
+                { label: "Campaign Total",                          amount: "$8,500",   accent: LIME,                   bold: true,  note: null         },
+                { label: "Social Management",                       amount: "$4,750/mo",accent: YELLOW,                 bold: false, note: "optional"   },
               ].map((row, i) => (
-                <div
-                  key={i}
-                  className={`flex justify-between items-center py-3 border-b border-white/10 last:border-b-0 ${row.bold ? "mt-2" : ""}`}
-                >
-                  <span className={`text-sm ${row.bold ? "font-black text-white" : "text-white/55"}`}>{row.label}</span>
-                  <span
-                    className={`font-black text-sm ${row.bold ? "text-lg" : ""}`}
-                    style={{ ...D, color: row.accent }}
-                  >{row.amount}</span>
+                <div key={i}>
+                  {i === 3 && <div className="border-t border-dashed border-white/20 mt-2 mb-2" />}
+                  <div className={`flex justify-between items-center py-3 border-b border-white/10 last:border-b-0 ${row.bold ? "mt-1" : ""}`}>
+                    <span className={`text-sm flex items-center gap-2 ${row.bold ? "font-black text-white" : "text-white/55"}`}>
+                      {row.label}
+                      {row.note && (
+                        <span className="text-xs px-1.5 py-0.5 font-black uppercase" style={{ background: "#333", color: YELLOW }}>
+                          {row.note}
+                        </span>
+                      )}
+                    </span>
+                    <span
+                      className={`font-black text-sm ${row.bold ? "text-lg" : ""}`}
+                      style={{ ...D, color: row.accent }}
+                    >{row.amount}</span>
+                  </div>
                 </div>
               ))}
             </div>
