@@ -883,6 +883,110 @@ export default function Page() {
         </div>
       </section>
 
+      {/* ── CATALOG REPACKAGING ──────────────────────────────── */}
+      <section className="relative px-4 md:px-8 py-24 overflow-hidden" style={{ background: "linear-gradient(180deg,#0a0a0a 0%,rgba(57,255,20,0.05) 100%)" }}>
+        <GlowBlob color={LIME} className="w-96 h-96 top-0 right-0" />
+        <div className="max-w-7xl mx-auto relative z-10">
+          <Eyebrow>CATALOG REPACKAGING</Eyebrow>
+          <h2
+            className="font-black uppercase leading-none mb-4"
+            style={{ ...D, fontSize: "clamp(2rem,6vw,6rem)" }}
+          >
+            Three new releases.<br />
+            <span style={{ color: LIME }}>Zero new recordings.</span>
+          </h2>
+          <p className="max-w-2xl text-sm text-white/60 leading-relaxed mb-14">
+            Repackage &quot;Talm Bout&quot; and &quot;Silly Rabbit&quot; into three format variants — OG Ron C Chopped &amp; Screwed versions of both singles, and a sped-up version of &quot;Silly Rabbit&quot; built for TikTok. Each version targets a distinct audience segment and gives the ad campaign fresh creative to run against new listeners.
+          </p>
+
+          {/* three release cards */}
+          <div className="grid md:grid-cols-3 gap-4 mb-12">
+            {[
+              {
+                n: "01",
+                tag: "CHOPPED & SCREWED",
+                title: "Talm Bout",
+                sub: "OG Ron C Version",
+                accent: MAGENTA,
+                audience: "Southern rap purists · Houston / Texas lane · Chopped & Screwed community · Older hip-hop heads",
+                why: "OG Ron C is the gold standard of the format. His name on the track is a co-sign from one of Houston's most respected figures. It anchors Juvenile Baby in a legacy Southern rap tradition and opens the catalog to a Screw-dedicated listenership that doesn't overlap with his current audience.",
+                platforms: ["Spotify","Apple Music","YouTube","SoundCloud"],
+                adAngle: "Target Houston, Texas, and Screwed-Up Click audiences on TikTok and Meta. Lean into slow aesthetic visuals — night drives, lowrider edits, slowed content.",
+              },
+              {
+                n: "02",
+                tag: "CHOPPED & SCREWED",
+                title: "Silly Rabbit",
+                sub: "OG Ron C Version",
+                accent: MAGENTA,
+                audience: "Southern rap purists · Luxury / lifestyle Screw listeners · Geffen catalog builders",
+                why: "Silly Rabbit already has luxury and lifestyle visuals baked in. The Screwed version amplifies that aesthetic — slower, heavier, more cinematic. Ron C's version becomes the late-night, high-end variant of the single and gives the Geffen catalog a second entry with credibility attached.",
+                platforms: ["Spotify","Apple Music","YouTube","SoundCloud"],
+                adAngle: "Nighttime lifestyle visuals. Luxury car + Screwed audio combinations perform extremely well on TikTok. Remarket to existing Silly Rabbit viewers with the new version.",
+              },
+              {
+                n: "03",
+                tag: "SPED UP",
+                title: "Silly Rabbit",
+                sub: "Fast Version",
+                accent: LIME,
+                audience: "TikTok-first audiences · Gen Z listeners · Algorithm-driven discovery · Dance / reaction content creators",
+                why: "Sped-up audio is one of the most reliable TikTok discovery mechanisms in 2025–26. A fast version of Silly Rabbit gives the algorithm a new hook, attracts a younger demographic that doesn't engage with the original tempo, and creates a third DSP entry that can chart independently from the original.",
+                platforms: ["TikTok","Spotify","Apple Music","YouTube Shorts"],
+                adAngle: "Run sped-up audio clips directly in TikTok ads. Target 18–24 demographic. Use fast cuts and energy visuals. The format is designed to go viral — the ad budget accelerates what the algorithm will already try to do.",
+              },
+            ].map(card => (
+              <div
+                key={card.n}
+                className="relative p-7 border-2 border-white/10 flex flex-col gap-5 hover:-translate-y-1 transition-transform"
+                style={{ background: "#111", borderTopColor: card.accent, borderTopWidth: 3 }}
+              >
+                <div className="flex items-start justify-between">
+                  <TapeLabel bg={card.accent} rotate="rotate-0">{card.tag}</TapeLabel>
+                  <span className="text-4xl font-black leading-none opacity-10" style={D}>{card.n}</span>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-black uppercase text-white leading-none" style={D}>{card.title}</h3>
+                  <p className="text-sm mt-1" style={{ color: card.accent }}>{card.sub}</p>
+                </div>
+                <p className="text-xs text-white/55 leading-relaxed">{card.why}</p>
+                <div>
+                  <p className="text-xs font-black uppercase mb-2" style={{ ...D, color: card.accent }}>Target Audience</p>
+                  <p className="text-xs text-white/45 leading-relaxed">{card.audience}</p>
+                </div>
+                <div>
+                  <p className="text-xs font-black uppercase mb-2" style={{ ...D, color: card.accent }}>Ad Angle</p>
+                  <p className="text-xs text-white/45 leading-relaxed">{card.adAngle}</p>
+                </div>
+                <div>
+                  <p className="text-xs font-black uppercase mb-2" style={{ ...D, color: card.accent }}>Platforms</p>
+                  <div className="flex flex-wrap gap-2">
+                    {card.platforms.map(p => (
+                      <span key={p} className="text-xs px-2 py-1 border border-white/20 text-white/50">{p}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* OG Ron C callout */}
+          <div className="p-7 border-2 flex flex-col md:flex-row gap-6 items-start" style={{ borderColor: MAGENTA, background: "rgba(255,0,255,0.04)" }}>
+            <div className="shrink-0">
+              <TapeLabel bg={MAGENTA} rotate="-rotate-2">OG RON C</TapeLabel>
+            </div>
+            <div>
+              <h4 className="text-base font-black uppercase text-white mb-2" style={D}>
+                Why OG Ron C specifically
+              </h4>
+              <p className="text-sm text-white/60 leading-relaxed max-w-3xl">
+                OG Ron C is not just a producer — he is the institutional voice of Chopped &amp; Screwed music. A co-sign from Ron C carries weight in Houston, across Texas, and throughout the Southern rap world in a way no other collaborator replicates. His name on both singles signals that Juvenile Baby is operating at the level of the tradition, not just borrowing an aesthetic. It is also a direct pipeline into Ron C&apos;s audience, his playlists, and his promotional reach — all of which are separate from anything the Geffen campaign has touched so far.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── 10. THE ASK ───────────────────────────────────────── */}
       <section className="px-4 md:px-8 py-24" id="the-ask" style={{ background: "#0d0d0d" }}>
         <div className="max-w-7xl mx-auto">
