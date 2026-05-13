@@ -719,11 +719,10 @@ export default function Page() {
             <div>
               <TapeLabel>THE MATH</TapeLabel>
               <h3 className="text-3xl font-black uppercase mt-4 mb-3 text-white leading-tight" style={D}>
-                $22,750 of digital spend earns{" "}
-                <span style={{ color: LIME }}>$425K–$825K</span> of label investment.
+                <span style={{ color: LIME }}>$22,750</span> total. 12 weeks. Full digital activation.
               </h3>
               <p className="text-sm text-white/55 leading-relaxed">
-                The artist&apos;s team runs the full digital campaign — ad spend, ads programming, and social management — and delivers 12 weeks of measurable streaming growth. The label brings radio, video, and album spend on the back of that data. $22,750 in. Up to $825K out. That&apos;s the leverage.
+                Ad spend, ads programming, and three months of full social management — everything needed to run a focused, consistent digital campaign behind both singles and deliver measurable results.
               </p>
             </div>
             <div className="flex flex-col justify-center">
@@ -731,11 +730,7 @@ export default function Page() {
                 { label: "Ad Spend (12 weeks)",                    amount: "$5,000",          accent: "rgba(255,255,255,0.8)", bold: false },
                 { label: "Digital Ads Programming",                amount: "$3,500",          accent: "rgba(255,255,255,0.8)", bold: false },
                 { label: "Social Management (3 mo. × $4,750)",     amount: "$14,250",         accent: "rgba(255,255,255,0.8)", bold: false },
-                { label: "Total Independent Campaign",             amount: "$22,750",         accent: YELLOW,                 bold: false },
-                { label: "Radio Servicing (label)",                amount: "$150K – $300K",   accent: LIME,                   bold: false },
-                { label: "Music Video Slate (label)",              amount: "$75K – $125K",    accent: LIME,                   bold: false },
-                { label: "Full LP Production (label)",             amount: "$200K – $400K",   accent: LIME,                   bold: false },
-                { label: "Combined Label Commit",                  amount: "$425K – $825K",   accent: MAGENTA,                bold: true  },
+                { label: "Total Campaign Investment",              amount: "$22,750",         accent: LIME,                   bold: true  },
               ].map((row, i) => (
                 <div
                   key={i}
